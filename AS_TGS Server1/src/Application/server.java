@@ -67,7 +67,7 @@ public class server {
 		
 
 	}
-	
+	//////////
 	public class serverone extends Thread{
 
 		private Socket socket = null;
