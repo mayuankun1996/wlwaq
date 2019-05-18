@@ -22,24 +22,24 @@ import java.sql.*;
 public class test {
 
 	// 将输入的密码hash成定长8位密钥
-	public static String hashcode(String Secret) {
-		String str = Secret;
-		int hash = str.hashCode();
-		String str2 = null;
-		int j = Math.abs(hash);
-		Integer k = j;
-
-		if (k.toString().length() == 8) {
-			str2 = k.toString();
-		}
-
-		if (k.toString().length() < 8) {
-			str2 = "0" + k.toString();
-			while (str2.length() < 8) {
-				str2 = "0" + str2;
-
-			}
-		}
+//	public static String hashcode(String Secret) {
+//		String str = Secret;
+//		int hash = str.hashCode();
+//		String str2 = null;
+//		int j = Math.abs(hash);
+//		Integer k = j;
+//
+//		if (k.toString().length() == 8) {
+//			str2 = k.toString();
+//		}
+//
+//		if (k.toString().length() < 8) {
+//			str2 = "0" + k.toString();
+//			while (str2.length() < 8) {
+//				str2 = "0" + str2;
+//
+//			}
+//		}
 
 		if (k.toString().length() > 8) {
 			str2 = k.toString().substring(0, 8);
