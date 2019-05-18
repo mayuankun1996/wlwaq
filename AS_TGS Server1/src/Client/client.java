@@ -132,9 +132,9 @@ public class client {
 			System.out.println("str分半========================"+yyy);
 		    BigInteger c1=new BigInteger(zzz);
 			BigInteger c2=new BigInteger(yyy);
-			c1=c1.modPow(d3, n3);
+			c1=c1.modPow(d2, n2);
 			System.out.println("str加密========================"+c1);
-			c2=c2.modPow(d3, n3);//将hash过的msg分两半加密=====签名{分两半原因是原数求平方太大}
+			c2=c2.modPow(d2, n2);//将hash过的msg分两半加密=====签名{分两半原因是原数求平方太大}
 			System.out.println("str加密========================"+c2);
 			str=str+c1+" "+c2;
 			System.out.println("str合并========================"+str);
