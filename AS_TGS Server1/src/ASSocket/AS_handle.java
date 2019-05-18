@@ -3,7 +3,7 @@ package ASSocket;
 import DES.DES;
 
 public class AS_handle {
-	
+	////////
 	//封装报文（密钥，包头，源IP，目的IP，[Kc,tgs|| IDtgs|| TS2|| Lifetime2|| Tickettgs）	 
     String TOC_enclosure(	String password,String head,String source_IP,String Dest_IP,String Kctgs,String IDtgs,String TS2,String Lifetime2,String tgs)
 	 {
@@ -77,7 +77,7 @@ public class AS_handle {
 
 		  return a;
 	  }
-    
+   ////////////////////////////// 
 	//IP加.	
     String rebuildIP(String IP)
 	  {
